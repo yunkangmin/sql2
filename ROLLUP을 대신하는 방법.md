@@ -26,6 +26,8 @@ AND     T1.ORD_DT >= TO_DATE('20170301','YYYYMMDD')
 AND     T1.ORD_DT < TO_DATE('20170501','YYYYMMDD')
 order by 1, 2
 ```
+<img src="picture/그림70.png" />
+
 UNION ALL을 사용한 방법은 T_ORD를 세 번 접근하고 있다. 성능에서 손해를 볼 수 밖에 없다. 
 
 #### 2. 카테시안 조인

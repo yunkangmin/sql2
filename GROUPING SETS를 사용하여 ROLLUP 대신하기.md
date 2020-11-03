@@ -15,3 +15,4 @@ GROUP BY GROUPING SETS(
             ,()   --전체합계
         );
 ```
+<img src="picture/그림69.png" />

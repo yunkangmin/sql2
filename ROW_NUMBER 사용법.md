@@ -41,3 +41,4 @@ FROM    (
         ) T2
 WHERE   T2.ORD_RNK = 1;
 ```
+<img src="picture/그림71.png" />
