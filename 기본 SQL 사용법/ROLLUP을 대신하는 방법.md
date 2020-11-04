@@ -26,7 +26,7 @@ AND     T1.ORD_DT >= TO_DATE('20170301','YYYYMMDD')
 AND     T1.ORD_DT < TO_DATE('20170501','YYYYMMDD')
 order by 1, 2
 ```
-<img src="picture/그림70.png" />
+<img src="/picture/그림70.png" />
 
 UNION ALL을 사용한 방법은 T_ORD를 세 번 접근하고 있다. 성능에서 손해를 볼 수 밖에 없다. 
 
@@ -57,7 +57,7 @@ GROUP BY CASE WHEN T2.RNO = 1 THEN TO_CHAR(T1.ORD_DT,'YYYYMM')
 
 FROM 절에서 T_ORD 테이블과 3건의 로우를 생성하는 테이블을 카테시안 조인한다. 카테시안 조인은 WHERE 절에 조인 조건이 없다. 그러므로 T_ORD에서 나온 데이터와 3건의 로우를 곱한만큼 데이터가 나온다. 결과는 아래와 같다.
 
-<img src="picture/카테시안 조인.png" />
+<img src="/picture/카테시안 조인.png" />
 RNO 2와 3은 각각 주문날짜별 소계와 전체합계를 구하기 위해서 존재한다.
 
 #### 3. WITH와 UNION ALL로 대신하기

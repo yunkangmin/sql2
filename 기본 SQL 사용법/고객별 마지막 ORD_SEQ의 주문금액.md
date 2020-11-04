@@ -16,7 +16,7 @@ SELECT  T1.CUS_ID
 FROM    M_CUS T1
 ORDER BY T1.CUS_ID;
 ```
-<img src="picture/그림39.png" height="60%" />
+<img src="/picture/그림39.png" height="60%" />
 
 아래와 같이 처리할 수도 있다. 이 또한 성능에 좋지 못하다.
 ```sql
@@ -49,4 +49,4 @@ FROM    (
 WHERE  ROWNUM <= 1;
 
 ```
-<img src="picture/그림40.png" />
+<img src="/picture/그림40.png" />

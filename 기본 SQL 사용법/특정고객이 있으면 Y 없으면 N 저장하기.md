@@ -18,4 +18,4 @@ WHERE   EXISTS(
             WHERE   T1.CUS_ID = 'CUS_0090'
             );
 ```
-<img src="picture/그림63.png" />
+<img src="/picture/그림63.png" />

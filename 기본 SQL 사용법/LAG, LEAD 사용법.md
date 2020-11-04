@@ -18,7 +18,7 @@ AND     T1.ORD_DT < TO_DATE('20170401','YYYYMMDD')
 AND     T1.CUS_ID IN ('CUS_0020','CUS_0021','CUS_0022','CUS_0023')
 GROUP BY T1.CUS_ID;
 ```
-<img src="picture/그림7.png" />
+<img src="/picture/그림7.png" />
 
 #### 주문년월 별 주문금액에, 전월 주문금액을 같이 표시하기
 아래 SQL을 활용하여 이전 대비 현재 월의 증가율을 손쉽게 구할 수 있다.
@@ -30,4 +30,4 @@ FROM    T_ORD T1
 WHERE   T1.ORD_ST = 'COMP'
 GROUP BY TO_CHAR(T1.ORD_DT,'YYYYMM');
 ```
-<img src="picture/그림8.png" height="50%"/>
+<img src="/picture/그림8.png" height="50%"/>

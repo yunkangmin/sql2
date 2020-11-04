@@ -28,7 +28,7 @@ FROM    (
 WHERE   T0.BY_YM_RANK <= 3
 ORDER BY T0.ORD_YM ,T0.BY_YM_RANK;
 ```
-<img src="picture/그림6.png" />
+<img src="/picture/그림6.png" />
 
 ## 고객별 마지막 주문조회하기
 ```sql
@@ -41,4 +41,4 @@ FROM    (
         ) T2
 WHERE   T2.ORD_RNK = 1;
 ```
-<img src="picture/그림71.png" />
+<img src="/picture/그림71.png" />

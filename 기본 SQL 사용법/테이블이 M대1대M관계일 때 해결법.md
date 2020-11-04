@@ -27,7 +27,7 @@ FROM    (
         ) T1
 GROUP BY T1.CUS_ID;
 ```
-<img src="picture/그림60.png" />
+<img src="/picture/그림60.png" />
 
 #### UNION ALL사용 #2
 성능을 고려해 M_CUS에 대한 조인을 인라인-뷰 바깥으로 옮김.
@@ -53,7 +53,7 @@ FROM    M_CUS T1
 WHERE   T1.CUS_ID = T4.CUS_ID
 GROUP BY T1.CUS_ID;
 ```
-<img src="picture/그림61.png" />
+<img src="/picture/그림61.png" />
 
 #### 3. 1:1:1로 조인
 1인 테이블은 그대로 두고, 나머지 M인 테이블들을 GROUP BY를 이용해 1로 만든후 조인을 수행한다.
@@ -86,6 +86,6 @@ WHERE   T1.CUS_ID = T2.CUS_ID
 AND     T1.CUS_ID = T3.CUS_ID
 AND     T1.CUS_ID = 'CUS_0023';
 ```
-<img src="picture/그림62.png" />
+<img src="/picture/그림62.png" />
 
 지금까지 이너 조인을 통해 결과를 추출했다. 만약에 T_ORD나 T_ITM_EVL에 없는 고객이면 조인 결과가 나오지 않는다. 무조건 조인 결과가 나오게 하려면 아우터-조인을 해야한다.
